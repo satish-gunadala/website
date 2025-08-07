@@ -6,7 +6,7 @@
   <title>Satish Catering Services</title>
 
   <!-- External Stylesheet -->
-  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+  <link rel="stylesheet" href="style.css" />
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -38,21 +38,22 @@
   <section id="gallery">
     <h2>Gallery</h2>
     <div class="gallery">
-      <img src="{{ url_for('static', filename='images/food1.jpg') }}" alt="Food 1" />
-      <img src="{{ url_for('static', filename='images/food2.jpg') }}" alt="Food 2" />
-      <img src="{{ url_for('static', filename='images/food3.jpg') }}" alt="Food 3" />
+      <img src="images/food1.jpg" alt="Food 1" />
+      <img src="images/food2.jpg" alt="Food 2" />
+      <img src="images/food3.jpg" alt="Food 3" />
     </div>
   </section>
 
   <section id="contact">
     <h2>Contact & Booking</h2>
-    <form action="/submit" method="POST">
+    <form action="https://formspree.io/f/your-email-id" method="POST">
       <input type="text" name="name" placeholder="Your Name" required />
       <input type="tel" name="phone" placeholder="Phone Number" required />
+      <input type="email" name="email" placeholder="Email (optional)" />
       <textarea name="message" placeholder="Event details: date, type, guests, location..." required></textarea>
       <button type="submit">Submit</button>
     </form>
-    <p>📞 <strong>Call/WhatsApp:</strong> <a href="tel:+91-9655692555" style="color: white; text-decoration: none;">+91-96556-92555</a></p>
+    <p>📞 <strong>Call/WhatsApp:</strong> <a href="tel:+91-8919487406">+91-8919487406</a></p>
   </section>
 
   <footer>
@@ -60,3 +61,5 @@
   </footer>
 </body>
 </html>
+
+
