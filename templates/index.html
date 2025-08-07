@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Satish Catering Services</title>
+
+  <!-- External Stylesheet -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>Satish Catering Services</h1>
+    <p>Delicious Food, Exceptional Service</p>
+    <a href="#contact" class="btn">Book Now</a>
+  </header>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>We are a premium catering service based in India, offering traditional and modern cuisine for weddings, birthdays, corporate events, and more. With years of experience, we bring taste and tradition to every plate.</p>
+  </section>
+
+  <section id="services">
+    <h2>Our Services</h2>
+    <ul>
+      <li>🍛 Wedding Catering</li>
+      <li>🎉 Birthday & Events</li>
+      <li>🏢 Corporate Lunches</li>
+      <li>🥗 Pure Veg & Non-Veg Options</li>
+    </ul>
+  </section>
+
+  <section id="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery">
+      <img src="{{ url_for('static', filename='images/food1.jpg') }}" alt="Food 1" />
+      <img src="{{ url_for('static', filename='images/food2.jpg') }}" alt="Food 2" />
+      <img src="{{ url_for('static', filename='images/food3.jpg') }}" alt="Food 3" />
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact & Booking</h2>
+    <form action="/submit" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="tel" name="phone" placeholder="Phone Number" required />
+      <textarea name="message" placeholder="Event details: date, type, guests, location..." required></textarea>
+      <button type="submit">Submit</button>
+    </form>
+    <p>📞 <strong>Call/WhatsApp:</strong> <a href="tel:+91-9655692555" style="color: white; text-decoration: none;">+91-96556-92555</a></p>
+  </section>
+
+  <footer>
+    <p>© 2025 Satish Catering Services. All rights reserved.</p>
+  </footer>
+</body>
+</html>
