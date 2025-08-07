@@ -3,7 +3,7 @@ body {
   background-size: cover;         /* Ensures it covers the whole screen */
   background-repeat: no-repeat;   /* Prevents repeating */
   background-position: center;    /* Centers the image */
-  font-family: cursive;           /* Optional: set the font */
+  font-family: Baloo;           /* Optional: set the font */
 }
 
 header {
@@ -80,7 +80,7 @@ input, textarea {
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
-  font-family: 'cursive';
+  font-family: 'Baloo';
   font-size: 1rem;
 }
 
@@ -105,3 +105,4 @@ footer {
   font-size: 0.9rem;
   color: #555;
 }
+
