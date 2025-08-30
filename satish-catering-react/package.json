@@ -1,0 +1,31 @@
+{
+  "name": "satish-catering-react",
+  "version": "1.0.0",
+  "description": "A React application for Satish Catering Services, showcasing services, gallery, and contact form.",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "keywords": [
+    "react",
+    "catering",
+    "services",
+    "food"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-scripts": "4.0.3"
+  },
+  "devDependencies": {},
+  "homepage": "http://yourwebsite.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/satish-catering-react.git"
+  }
+}
