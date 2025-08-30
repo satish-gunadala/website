@@ -1,27 +1,15 @@
 import React from 'react';
-import Header from './components/Header';
-import NavBar from './components/NavBar';
-import AboutUs from './components/AboutUs';
-import Services from './components/Services';
-import Gallery from './components/Gallery';
 import ContactForm from './components/ContactForm';
-import Footer from './components/Footer';
 import './styles/main.css';
 
-const App = () => {
+function App() {
   return (
     <div>
-      <Header />
-      <NavBar />
-      <main>
-        <AboutUs />
-        <Services />
-        <Gallery />
-        <ContactForm />
-      </main>
-      <Footer />
+      {/* Add Header, NavBar, AboutUs, Services, Gallery components as needed */}
+      <ContactForm />
+      {/* Add Footer component as needed */}
     </div>
   );
-};
+}
 
 export default App;

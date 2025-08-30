@@ -23,10 +23,11 @@ const ContactForm = () => {
   };
 
   return (
-    <section id="contact">
-      <h2>Contact & Booking</h2>
-      <form onSubmit={handleSubmit}>
+    <section id="contact" className="contact-section">
+      <h2 className="section-title">Contact & Booking</h2>
+      <form className="contact-form" onSubmit={handleSubmit} autoComplete="off">
         <input
+          className="form-input"
           type="text"
           name="name"
           placeholder="Your Name"
@@ -35,6 +36,7 @@ const ContactForm = () => {
           required
         />
         <input
+          className="form-input"
           type="tel"
           name="phone"
           placeholder="Phone Number"
@@ -43,6 +45,7 @@ const ContactForm = () => {
           required
         />
         <input
+          className="form-input"
           type="email"
           name="email"
           placeholder="Email (optional)"
@@ -50,15 +53,18 @@ const ContactForm = () => {
           onChange={handleChange}
         />
         <textarea
+          className="form-textarea"
           name="message"
           placeholder="Event details: date, type, guests, location..."
           value={formData.message}
           onChange={handleChange}
           required
         />
-        <button type="submit">Submit</button>
+        <button className="form-button" type="submit">Submit</button>
       </form>
-      <p>📞 <strong>Call/WhatsApp:</strong> <a href="tel:+91-8919487406">+91-8919487406</a></p>
+      <p className="contact-phone">
+        📞 <strong>Call/WhatsApp:</strong> <a href="tel:+91-8919487406">+91-8919487406</a>
+      </p>
     </section>
   );
 };
