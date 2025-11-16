@@ -1,0 +1,29 @@
+name: Validate PR Title
+
+on:
+  pull_request:
+    types: [opened, edited, synchronize, reopened]
+
+jobs:
+  check-title:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Validate PR title
+        run: |
+          TITLE="${{ github.event.pull_request.title }}"
+
+          echo "PR Title: $TITLE"
+
+          # Allowed prefixes: feat: OR configuration:
+          REGEX="^(feat:|configuration:).+"
+
+          if [[ ! "$TITLE" =~ $REGEX ]]; then
+            echo "❌ Invalid PR title."
+            echo "Allowed formats:"
+            echo "  • feat: <message>"
+            echo "  • configuration: <message>"
+            exit 1
+          fi
+
+          echo "✔️ PR title is valid!"
