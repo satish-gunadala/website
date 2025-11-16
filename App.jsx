@@ -131,4 +131,5 @@ export default function SatishClothStore() {
     </div>
   );
 }
+//testing to check if github workflows triggering
 //Everything is done using Tailwind CSS and Framer Motion for animations. The store features a responsive navbar, hero section, product grid, cart functionality, and footer.
